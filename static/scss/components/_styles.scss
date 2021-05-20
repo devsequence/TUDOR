@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: $default;
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+}
+.btn{
+  cursor: pointer;
+}
+.btn-primary{
+  font-size: 18px;
+  line-height: 18px;
+  padding: 17px 10px;
+  font-family: $roboto;
+  font-weight: 300;
+  background: #1b1b1b;
+  border-radius: 3px;
+  border: 1px solid #1b1b1b;
+  color: $white;
+  max-width: 180px;
+  width: 100%;
+  &:hover{
+    background: transparent;
+    color: #1b1b1b;
+  }
+}

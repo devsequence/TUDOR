@@ -1,0 +1,41 @@
+// genearl
+
+$white: #ffffff;
+$black: #000000;
+
+// main
+
+$primary: #0d41fb;
+$secondary: #1642d4;
+$default: #080c14;
+$default-100: #263149;
+$gray: #dadce6;
+$gray-100: #6b798c;
+$yellow: #f5c83d;
+$blue: #230fae;
+$blue-100: #2912cd;
+$light: #f3f4f8;
+$light-100: #e5e5e5;
+$red: #DE3F53;
+
+// info
+
+$danger: #f00;
+$success: #00b911;
+$info: #26badf;
+$warning: #fbf8db;
+
+// shades
+
+
+$light-100: #ECEAEB;
+$default-100: #9A9A9A;
+
+
+// mixins
+
+@mixin linear-gradient($direction, $fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: linear-gradient($direction, $fromColor, $toColor);
+}
+
