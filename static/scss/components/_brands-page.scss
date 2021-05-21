@@ -21,6 +21,14 @@
     font-family: $montserrat;
     margin-bottom: 40px;
   }
+  &.title-section__white{
+    .title-section__red{
+      color: $white;
+    }
+    .title-section__black{
+      color: $white;
+    }
+  }
 }
 .inside-wrapper{
   padding: 100px 0;
@@ -67,4 +75,16 @@
       margin-bottom: 30px;
     }
   }
+}
+.video-wrapper{
+  background: #1b1b1b;
+  padding: 100px 0;
+}
+.video-wrap{
+  display: flex;
+  &__description{
+    width: 50%;
+  }
+  &__text{}
+
 }
