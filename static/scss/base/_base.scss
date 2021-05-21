@@ -53,10 +53,6 @@ section.wrapper{
 .container {
   flex: 1 0 auto;
   z-index: 10;
-  @media screen and (max-width: 992px){
-    width: 100%;
-    max-width: 100%;
-  }
 }
 .footer {
   flex: 0 0 auto;
@@ -79,9 +75,25 @@ section.wrapper{
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1510px;
-  @media screen and (max-width: 1440px){
-    max-width: 1300px;
+}
+@media (min-width: 576px){
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px){
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .container {
+    max-width: 1200px;
   }
 }
 .icon{
