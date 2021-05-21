@@ -148,7 +148,7 @@ body {
 .label, .label-select, .label-textarea {
   width: 100%;
   display: block;
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
   .label span, .label-select span, .label-textarea span {
     display: block;
     font-size: 18px;
@@ -282,7 +282,7 @@ body {
     color: #1b1b1b;
     text-align: center;
     margin-bottom: 15px;
-    padding-top: 83px; }
+    padding-top: 65px; }
   .product-info__subtitle {
     font-size: 18px;
     line-height: 24px;
@@ -394,7 +394,7 @@ body {
       margin-right: 10px; }
 
 .product-about {
-  padding: 100px 0; }
+  padding: 30px 0 100px; }
 
 .product-about__wrap {
   display: flex;
@@ -464,11 +464,12 @@ body {
     font-size: 18px; }
   .similar-wrapper .similar-slider .similar-subtitle {
     color: #808080;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
     font-weight: 400; }
   .similar-wrapper .similar-slider .similar-price {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 700;
     color: #1f1f1f; }
 
 @media screen and (max-width: 1200px) {

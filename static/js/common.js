@@ -1,10 +1,6 @@
 var galleryTop = new Swiper('.gallery-top', {
     spaceBetween: 10,
     navigation: false,
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
     loop: true,
     loopedSlides: 4
 });
