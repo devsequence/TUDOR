@@ -7,15 +7,18 @@
 .title-section{
   font-family: $roboto;
   &__red{
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 16px;
     font-weight: 900;
     text-transform: uppercase;
     color: #d12211;
     font-family: $montserrat;
+    margin-bottom: 3px;
   }
   &__black{
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1px;
     font-weight: 900;
     color: #1e1e1e;
     font-family: $montserrat;
@@ -31,44 +34,56 @@
   }
 }
 .inside-wrapper{
-  padding: 100px 0;
+  padding: 64px 0;
   background: #f5f5f5;
   text-align: center;
+  .title-section{
+    &__red{
+      margin-bottom: 5px;
+    }
+    &__black{
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 15px;
+    }
+  }
   .inside-text{
     max-width: 800px;
     margin: 0 auto;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 400;
     font-family: $roboto;
     color: #1e1e1e;
   }
 }
 .history-wrapper{
-  padding: 100px 0;
+  padding: 100px 0 67px;
   background: #f5f5f5;
   text-align: center;
+  .title-section__black{
+    margin-bottom: 47px;
+  }
   .history-wrap{
-    max-width: 800px;
     margin: 0 auto;
     &__media{
-      margin-bottom: 30px;
+      margin-bottom: 70px;
       img{
-        max-width: 800px;
         margin: 0 auto;
       }
     }
     &__text{
-      font-size: 16px;
-      line-height: 26px;
+      max-width: 800px;
+      font-size: 14px;
+      line-height: 24px;
       font-weight: 300;
       font-family: $roboto;
       color: #1e1e1e;
-      margin-bottom: 30px;
+      margin: 0 auto 20px;
     }
     &__author{
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 14px;
+      line-height: 24px;
       font-weight: 300;
       font-family: $roboto;
       color: #1e1e1e;
@@ -78,13 +93,250 @@
 }
 .video-wrapper{
   background: #1b1b1b;
-  padding: 100px 0;
+  height: 473px;
 }
 .video-wrap{
   display: flex;
+  align-items: center;
+  .title-section__black{
+    margin-bottom: 30px;
+  }
+  .title-section__white{
+    text-align: left;
+  }
   &__description{
     width: 50%;
+    text-align: left;
+    max-width: 540px;
+    margin: 0 150px 0 auto;
+
+  }
+  &__text{
+    color: $white;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__media{
+    width: 50%;
+    height: 473px;
+    img{
+      max-height: 473px;
+      width: 100%;
+      height: 473px;
+      object-fit: cover;
+    }
+    iframe{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.reviews-wrapper{
+  padding: 113px 0 89px;
+}
+.reviews-wrap{
+
+}
+.reviews-item{
+  display: flex;
+  align-items: center;
+  max-height: 580px;
+  &:nth-child(2n){
+    flex-direction: row-reverse;
+    .title-section, .reviews-item__text{
+      text-align: right;
+    }
+    .reviews-item__des{
+      padding: 0 70px 0 25px;
+    }
+  }
+  &__media{
+    width: 50%;
+    img{
+      max-height: 580px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__des{
+    width: 50%;
+    padding: 0 25px 0 70px;
+  }
+  .title-section{
+    text-align: left;
+  }
+  .title-section__red{
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 40px;
+  }
+  .title-section__black{
   }
   &__text{}
+}
+.banner-wrapper{
+  background-size: cover;
+  min-height: 400px;
+  padding: 100px 0;
+  .container{
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ .banner-title{
+   font-family: $montserrat;
+   font-weight: 800;
+   color: $white;
+   text-align: center;
+   font-size: 36px;
+   line-height: 42px;
+  letter-spacing: -1px;
+ }
+}
+.bottom-logo{
+  padding: 50px 0;
+  background:#000 ;
+  .logo-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1440px){
+  .video-wrap__media{
+    margin: 0 0 0 auto;
+  }
+  .video-wrap__description{
+    margin: 0;
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 1200px){
 
+
+  .history-wrapper{
+    padding: 40px 0 40px;
+    .history-wrap__media{
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .reviews-item{
+    max-height: 465px;
+    &:nth-child(2n){
+      .reviews-item__des{
+        padding: 0 40px 0 15px;
+      }
+    }
+    &__des{
+      padding: 0 15px 0 40px;
+    }
+  }
+}
+@media screen and (max-width: 992px){
+  .video-wrapper{
+    height: auto;
+    padding: 40px 0;
+  }
+  .video-wrap{
+    flex-direction: column;
+    .title-section__white{
+      text-align: center;
+    }
+    &__description{
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+    &__media{
+      margin: 0 auto;
+      padding: 0 15px;
+      height: 300px;
+      width: 100%;
+      img{
+        height: 100%;
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  .inside-wrapper {
+    padding: 40px 0 20px;
+    .title-section__black{
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+  .history-wrapper{
+    padding: 40px 0 40px;
+    .title-section__black{
+      margin-bottom: 15px;
+    }
+    .history-wrap__media{
+      margin-bottom: 20px;
+    }
+  }
+  .reviews-wrapper{
+    padding: 40px 0 40px;
+  }
+  .reviews-item{
+    max-height: 100%;
+    margin-bottom: 30px;
+    flex-direction: column;
+    &:nth-child(2n){
+      flex-direction: column;
+      .title-section, .reviews-item__text{
+        text-align: center;
+      }
+    }
+    .title-section{
+      text-align: center;
+    }
+    .title-section__red{
+      margin-bottom: 10px;
+    }
+    .title-section__black{
+      margin-bottom: 25px;
+    }
+    &__des{
+      width: 100%;
+      padding: 0 !important;
+    }
+    &__text{
+      text-align: center;
+    }
+    &__media{
+      width: 100%;
+      img {
+        max-height: 100%;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto 30px;
+        display: block;
+      }
+    }
+  }
+  .banner-wrapper {
+    .banner-title{
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .title-section{
+    &__black{
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  .banner-wrapper .banner-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
