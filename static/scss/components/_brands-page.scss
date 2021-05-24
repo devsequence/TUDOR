@@ -1,5 +1,6 @@
 .top-section{
   img{
+    display: block;
     width: 100%;
     margin: 0 auto;
   }
@@ -59,7 +60,6 @@
 }
 .history-wrapper{
   padding: 100px 0 67px;
-  background: #f5f5f5;
   text-align: center;
   .title-section__black{
     margin-bottom: 47px;
